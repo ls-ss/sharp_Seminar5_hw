@@ -4,8 +4,8 @@
 
 Console.Clear();
 
-int NumElem = new Random().Next(2, 11); // Переменная обозначающая кол-во элементов в массиве, 
-                                        // выбранная случайным образом в диапазоне от 2 до 10
+// Переменная обозначающая кол-во элементов в массиве, выбранная случайным образом в диапазоне от 2 до 10
+int NumElem = new Random().Next(2, 11);
 int [] array = new int[NumElem]; // Объявляем о создании массива на 'NumElem' элементов типа int
 
 // Организуем ввод значений элементов массива случайными значениями в диапазоне от 0 до 99,
@@ -20,7 +20,6 @@ for (int i = 0; i < NumElem; i++){
     if (i == 0) {
         min = array[i] ;
         max = array[i] ;
-        Console.Write($"{array[i]}");
     }
     else{
         if (array[i] < min){
@@ -28,9 +27,9 @@ for (int i = 0; i < NumElem; i++){
         }
         if (array[i] > max){
             max = array[i];
-        }
-        Console.Write($"{array[i]}");
+        }  
     }
+    Console.Write($"{array[i]}");
 
     if(i < NumElem -1) Console.Write(", ");  
 }
