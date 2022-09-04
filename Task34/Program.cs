@@ -24,5 +24,5 @@ for (int i = 0; i < NumElem; i++){
 
 Console.WriteLine("]");
 
-// Вывод значения сигнала max
+// Вывод кол-ва четных чисел
 Console.WriteLine($"Четных чисел в массиве = {par}.");
